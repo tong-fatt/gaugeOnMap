@@ -5,9 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<title>d3.js gauges</title>
 		<script src="./d3.v3.js"></script>
+		<script src="./d3.v4.js"></script>
 		<script src="./jquery.min.js"></script>
 		<script src="./tableau.extensions.1.latest.js"></script>
 		<script type="text/javascript" src="./gauge.js"></script>
+		<script src="./gauge-ext.js"></script>
+		<script src="./topojson.min.js"></script>
 		<!--Bootstrap-->
 		<link rel="stylesheet" href="./bootstrap.min.css">      
 		<style>	
@@ -15,12 +18,22 @@
 			{
 			  	font: 10px arial;
 			}
+			svg {	
+			background: #e9edf0;
+			}
+			.mesh {
+				fill:none;
+				stroke: white;
+				stroke-width: 0.5px;
+			}
 			
+			.land {
+				fill: #69b3a2;
+			}
 		</style>		
 	</head>
 	<body>
         <body>
-		<span id="chart_div"></span>
 	</body>
 	
 </html>
